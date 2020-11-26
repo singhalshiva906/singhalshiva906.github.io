@@ -17,6 +17,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    
     padding: 25px;
 }
 
@@ -120,5 +121,8 @@ a:hover{
     }
     .introduction p{
         font-size: 1.2rem;        
+    }
+    .navbar{
+        padding: 11px;
     }
 }
