@@ -1,0 +1,225 @@
+nav div img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+
+.navbar{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    
+    padding: 25px;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 28px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.logo{
+    margin:10px 14px;
+    padding: 2px 3px;
+}
+
+nav div ul{
+    display: flex;  
+    flex-wrap: wrap;  
+}
+
+nav a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar::before{
+    background:black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.73;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cont{
+    display: flex;  
+    flex-direction: column ;
+    color: white;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 2rem;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.cont::before{
+    background:url('../img/home.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.73;
+    content: ""; 
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    flex-wrap: wrap;
+}
+
+.cont span{
+    color: yellow;
+}
+
+.cont .para1{
+    font-size: 5rem;
+}
+
+.para1,.para2{
+    margin-left: 50px;
+}
+
+.info{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+}
+
+.info1,.info2{
+    padding: 18px;
+    border: 4px solid white;
+    width: 498px;
+    position: relative;
+}
+.info2{
+    text-align: center;
+}
+
+.icons{
+    margin-left: 50px;
+    display: flex;
+}
+
+.icons a{
+    margin-right: 10px;
+}
+
+.icons i{
+    color: white;
+}
+
+.icons i:hover{
+    color: yellow;
+}
+
+
+.info1 ::before{
+    background:black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+.info2 ::before{
+    background:black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+@media only screen and (max-width:1100px){
+    .info{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .info1{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .info1,.info2{
+       
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width:546px){
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar{
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .info1,.info2{
+        width: 400px;
+    }
+
+    .para1,.para2{
+        margin: 0;
+        text-align: center;
+    }
+
+    .icons{
+        justify-content: center;
+        margin: 0;
+    }
+    .navbar a{
+        padding: 0;
+    }
+    .navbar li:hover{
+        background-color: white;
+    }
+    .navbar{
+        padding:3px;
+    }
+    
+}
+
+@media only screen and (max-width:454px){
+    .cont .para1{
+        font-size: 3rem;
+    }
+    .cont .para2{
+        font-size: 1.5rem;
+    }
+    .info1,.info2{
+        font-size: 1.3rem;
+        width: 270px;
+    }
+    a{
+        padding: 0;
+    }
+    
+}
